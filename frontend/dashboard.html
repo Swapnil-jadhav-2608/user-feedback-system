@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Feedback Dashboard</h1>
+    <div class="controls">
+      <div class="filter">
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+          <option value="">All Categories</option>
+          <option value="suggestion">Suggestion</option>
+          <option value="bug">Bug Report</option>
+          <option value="feature">Feature Request</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="sort">
+        <label for="sortBy">Sort by:</label>
+        <select id="sortBy">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
+      </div>
+    </div>
+    <div id="feedbackList" class="feedback-list"></div>
+    <a href="index.html" class="back-link">Back to Feedback Form</a>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
